@@ -10,7 +10,7 @@ public class GuitarTest {
 
     @Before
     public void before(){
-        guitar = new Guitar("Les Paul","Sunburst",6,500,850);
+        guitar = new Guitar("Les Paul","Sunburst",6,500.00,850.00);
 
     };
 
@@ -30,12 +30,12 @@ public class GuitarTest {
 
     @Test
     public void getCostPrice() {
-        assertEquals(500,guitar.getCostPrice());
+        assertEquals(500.00,500,guitar.getCostPrice());
     }
 
     @Test
     public void getListPrice() {
-        assertEquals(850,guitar.getListPrice());
+        assertEquals(850.00,850,guitar.getListPrice());
     }
 
     @Test
@@ -45,6 +45,6 @@ public class GuitarTest {
 
     @Test
     public void calculateMarkup() {
-        assertEquals(350,guitar.calculateMarkup());
+        assertEquals(350.00,350,guitar.calculateMarkup());
     }
 }

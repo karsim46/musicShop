@@ -6,10 +6,10 @@ import Behaviours.ISell;
 public class Piano extends Instrument implements IPlay, ISell {
     private String model;
     private String colour ;
-    private int costPrice;
-    private int listPrice;
+    private double costPrice;
+    private double listPrice;
 
-    public Piano(String model, String colour, int costPrice, int listPrice) {
+    public Piano(String model, String colour, double costPrice, double listPrice) {
         super(colour, "Keyboard");
         this.colour = colour;
         this.model = model;
@@ -23,11 +23,11 @@ public class Piano extends Instrument implements IPlay, ISell {
 
 
 
-    public int getCostPrice() {
+    public double getCostPrice() {
         return this.costPrice;
     }
 
-    public int getListPrice() {
+    public double getListPrice() {
         return this.listPrice;
     }
 
@@ -35,7 +35,7 @@ public class Piano extends Instrument implements IPlay, ISell {
         return "Instrument noises";
     }
 
-    public int calculateMarkup() {
+    public double calculateMarkup() {
         return this.listPrice - this.costPrice;
     }
 

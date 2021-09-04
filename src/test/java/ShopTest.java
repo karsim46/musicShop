@@ -15,7 +15,7 @@ public class ShopTest {
     @Before
     public void before() {
         shop = new Shop("Skye's Super Tunes!");
-        instrument = new Guitar("LesPaul","Sunburst",6,500,850);
+        instrument = new Guitar("LesPaul","Sunburst",6,500.00,850.00);
     }
 
     @Test

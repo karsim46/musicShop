@@ -6,10 +6,10 @@ import Behaviours.ISell;
 public class Guitar extends Instrument implements IPlay, ISell {
     private String model;
     private int numberOfStrings;
-    private int costPrice;
-    private int listPrice;
+    private double costPrice;
+    private double listPrice;
 
-    public Guitar(String model, String colour, int numberOfStrings, int costPrice, int listPrice) {
+    public Guitar(String model, String colour, int numberOfStrings, double costPrice, double listPrice) {
         super(colour, "String");
         this.numberOfStrings = numberOfStrings;
         this.model = model;
@@ -25,11 +25,11 @@ public class Guitar extends Instrument implements IPlay, ISell {
         return this.numberOfStrings;
     }
 
-    public int getCostPrice() {
+    public double getCostPrice() {
         return this.costPrice;
     }
 
-    public int getListPrice() {
+    public double getListPrice() {
         return this.listPrice;
     }
 
@@ -37,7 +37,7 @@ public class Guitar extends Instrument implements IPlay, ISell {
         return "Instrument noises";
     }
 
-    public int calculateMarkup() {
+    public double calculateMarkup() {
         return this.listPrice - this.costPrice;
     }
 
