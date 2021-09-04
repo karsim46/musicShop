@@ -35,5 +35,9 @@ public class ShopTest {
     }
 
 
-
+    @Test
+    public void removeFromStock() {
+        shop.removeFromStock(instrument);
+        assertEquals(0,shop.removeFromStock(instrument));
+    }
 }

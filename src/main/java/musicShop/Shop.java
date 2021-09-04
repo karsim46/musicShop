@@ -26,7 +26,11 @@ public class Shop {
         this.stock.add(item);
     }
 
-    public void removeFromStock(ISell item) {
+    public int removeFromStock(ISell item) {
         this.stock.remove(item);
+        return 0;
     }
+
+
+
 }
