@@ -24,17 +24,22 @@ public class PianoTest {
 
     @Test
     public void getCostPrice() {
+        assertEquals(1000,piano.getCostPrice());
     }
 
     @Test
     public void getListPrice() {
+        assertEquals(1500,piano.getListPrice());
     }
 
     @Test
-    public void play() {
+    public void pianoCanPlay() {
+        assertEquals("Instrument noises",piano.play());
+
     }
 
     @Test
     public void calculateMarkup() {
+        assertEquals(500,piano.calculateMarkup());
     }
 }
